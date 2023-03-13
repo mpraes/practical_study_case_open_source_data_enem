@@ -1,0 +1,2427 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/11/2023 5:16:11 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="nt-ent-tstptc-0"
+  DTS:CreatorName="nt-ent-tstptc-0\ubicase01"
+  DTS:DTSID="{51966AAC-C5CD-4008-B6AF-81CA4FFCB258}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.948.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{662A36DF-693F-40D5-8E0F-8CAFEDFBD47C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV_ENEM_2020]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8FB8BE17-6CD5-42E1-9D40-F88EF167C41F}"
+      DTS:ObjectName="CSV_ENEM_2020">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1046"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ubicase01\Desktop\BASES\ENEM2020\DADOS\MICRODADOS_ENEM_2020.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_INSCRICAO"
+              DTS:DTSID="{E7D74FD8-9572-4946-A834-0871EC94DEFF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_ANO"
+              DTS:DTSID="{D8784F85-FCCF-45CC-A3CF-9052331B4A02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_FAIXA_ETARIA"
+              DTS:DTSID="{DB41F9F8-BFC8-40CE-82F5-578E4312DAA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_SEXO"
+              DTS:DTSID="{13E94AC3-8197-4552-92A0-BEAD99AFDE01}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_ESTADO_CIVIL"
+              DTS:DTSID="{7C4D8D8D-A4EF-4558-B20A-0A63205E00FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_COR_RACA"
+              DTS:DTSID="{12CF0E77-E4B4-4343-A377-56B8C4547F7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_NACIONALIDADE"
+              DTS:DTSID="{63384B78-E29E-460D-8A5D-83BCDEF3F7D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_ST_CONCLUSAO"
+              DTS:DTSID="{D3B34274-3FF9-4628-8284-93552CE07062}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_ANO_CONCLUIU"
+              DTS:DTSID="{BFF40EDD-EB91-4E6B-B0CE-0C26D6061547}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_ESCOLA"
+              DTS:DTSID="{CACAF8E6-04E2-40F3-B1C6-5CE7FF76CDB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_ENSINO"
+              DTS:DTSID="{BC567DAA-64FB-423C-A1CC-132859A68EB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IN_TREINEIRO"
+              DTS:DTSID="{B40A6008-732C-4E31-A8CC-C07BA5443741}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_MUNICIPIO_ESC"
+              DTS:DTSID="{177B0357-491D-414B-8324-8D7791D369C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NO_MUNICIPIO_ESC"
+              DTS:DTSID="{F2C0E9DC-6ADA-4798-82AC-958AC54D1C2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_UF_ESC"
+              DTS:DTSID="{AA8BC9C3-ECC3-4072-AA2F-E8C26F242047}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SG_UF_ESC"
+              DTS:DTSID="{7073EAAB-C877-4899-8C35-AEAF5B071F89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_DEPENDENCIA_ADM_ESC"
+              DTS:DTSID="{4FE234CC-84E3-4BD8-9F87-54A03F924EBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_LOCALIZACAO_ESC"
+              DTS:DTSID="{5AED0F2E-8C60-4215-86E2-20F6B326FA0D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_SIT_FUNC_ESC"
+              DTS:DTSID="{D1CEBBA4-8727-408C-ABAB-3C1ACC68AF5F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_MUNICIPIO_PROVA"
+              DTS:DTSID="{FB48F731-A16B-4811-A870-B86C6285CA50}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NO_MUNICIPIO_PROVA"
+              DTS:DTSID="{B758CE4D-CBB3-470B-B709-000688E40D50}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_UF_PROVA"
+              DTS:DTSID="{FB3F6E65-FEAD-4061-9157-70EE4F40637B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SG_UF_PROVA"
+              DTS:DTSID="{F979B76B-F53D-4E13-AC13-32217010A0F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_PRESENCA_CN"
+              DTS:DTSID="{9A9364CC-61D8-4CA1-B074-4014964EE840}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_PRESENCA_CH"
+              DTS:DTSID="{64E0D849-016F-412D-AF0F-C4A299966880}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_PRESENCA_LC"
+              DTS:DTSID="{21133972-5D9D-4D9A-88B9-56124F17ADB1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_PRESENCA_MT"
+              DTS:DTSID="{E37D708F-47D3-4344-B13F-B1EEEA2DBD2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_PROVA_CN"
+              DTS:DTSID="{EDEC71FF-4C10-4679-81F4-FFD263FE26FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_PROVA_CH"
+              DTS:DTSID="{37CF4AB2-B195-41C3-9C69-93E123408CEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_PROVA_LC"
+              DTS:DTSID="{816B76A5-B197-44F2-A7E5-B7A6587B9BA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_PROVA_MT"
+              DTS:DTSID="{1254FA74-20BD-47DC-A615-547C5178AF69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_CN"
+              DTS:DTSID="{0A58ABB1-F842-4D10-9547-7E95211762B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_CH"
+              DTS:DTSID="{12B24CED-0507-4BA0-9F14-BF16F4B5EEAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_LC"
+              DTS:DTSID="{AB856D9D-1027-4728-B11D-402E2629720C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_MT"
+              DTS:DTSID="{3E3DC86F-2643-444B-8230-7D1FDA996439}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_RESPOSTAS_CN"
+              DTS:DTSID="{A715446D-FDFF-4E0B-9051-0324B5024178}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_RESPOSTAS_CH"
+              DTS:DTSID="{92179631-650F-433D-AC0F-33C69E385A60}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_RESPOSTAS_LC"
+              DTS:DTSID="{448AE400-0974-4E84-AF73-7AAD9510C7B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_RESPOSTAS_MT"
+              DTS:DTSID="{1B03DCA8-4447-4ED7-8A46-C60E72D3EA2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_LINGUA"
+              DTS:DTSID="{5DB6AEF5-BF2B-4B5C-B250-E7C9403C87A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_GABARITO_CN"
+              DTS:DTSID="{5693FCC6-466D-48D5-8CD5-4529889CAC28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_GABARITO_CH"
+              DTS:DTSID="{A847AEB8-33D4-44E5-938E-B7C9D6144ADB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_GABARITO_LC"
+              DTS:DTSID="{23C6DB53-3C29-42AF-9C02-4FE1CADC806E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TX_GABARITO_MT"
+              DTS:DTSID="{B222DA24-6373-4477-AEAD-DDABEFA14763}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_STATUS_REDACAO"
+              DTS:DTSID="{82611838-CC01-4C61-B6A7-325DA7242771}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_COMP1"
+              DTS:DTSID="{AC389145-4488-4251-9EC7-8C9636290A6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_COMP2"
+              DTS:DTSID="{27831192-03E7-4D5B-83E1-47BFE6EBEF46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_COMP3"
+              DTS:DTSID="{89F39CCD-A8B1-4F2B-BC37-7388D96333F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_COMP4"
+              DTS:DTSID="{FBD0F1F8-74FE-4517-A56A-2A2F0B5C6A02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_COMP5"
+              DTS:DTSID="{95BA9331-F2C6-4960-B3C3-5D6F4390871B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NU_NOTA_REDACAO"
+              DTS:DTSID="{7D564CA6-CFCF-4519-96A6-33941AB663D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q001"
+              DTS:DTSID="{22E86341-8A14-451D-AD7A-51EAFDB59EC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q002"
+              DTS:DTSID="{7A4D27A2-704E-4444-8FB8-E4DA01C52C2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q003"
+              DTS:DTSID="{68E7E00B-C44F-4DC9-9C8F-3EBF6E37CE59}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q004"
+              DTS:DTSID="{71D144F7-1C43-478C-8FB8-AEDFDEFD85C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q005"
+              DTS:DTSID="{10739D27-56EB-4D9D-9148-36507942CD3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q006"
+              DTS:DTSID="{F8FDEEEC-782E-431D-A06C-0D9638764126}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q007"
+              DTS:DTSID="{CB89D3E3-4600-4F5C-B2B9-67B6B29A7A11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q008"
+              DTS:DTSID="{9B657953-28A8-4834-AAA6-0E775283836D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q009"
+              DTS:DTSID="{071C7505-3AE5-4D4A-8C66-34C994B99050}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q010"
+              DTS:DTSID="{6BF3F40F-A65D-46FE-AD29-FB92A23CDA3C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q011"
+              DTS:DTSID="{13B702AD-D44A-49D1-9571-2589D4191331}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q012"
+              DTS:DTSID="{2A4E30C1-A29D-4F68-A9B3-D0203341ACC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q013"
+              DTS:DTSID="{FC47A90F-FB79-4E30-85B5-194A7758C9A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q014"
+              DTS:DTSID="{F9B521F9-567C-4773-B378-418EDCA80F35}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q015"
+              DTS:DTSID="{E7E110EB-E393-4CC3-88C1-F41E275E648D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q016"
+              DTS:DTSID="{7B90A32D-CE3F-4683-A9A2-65EF3AABA6A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q017"
+              DTS:DTSID="{1B7907E0-2E83-4B1A-A118-E7393E52DDA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q018"
+              DTS:DTSID="{9D280615-5426-49FB-88CE-CCF8ED090743}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q019"
+              DTS:DTSID="{DD031372-5FA9-478C-BEE1-658718D73B38}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q020"
+              DTS:DTSID="{EC7B1998-A8F8-4829-AAED-F88E020151D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q021"
+              DTS:DTSID="{76E7C68D-6147-4853-97B6-0F63C65BBD06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q022"
+              DTS:DTSID="{B97B556F-91EB-4F6F-8F89-BB01B27AECFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q023"
+              DTS:DTSID="{3491A1B8-070E-4879-A854-7092863DA493}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q024"
+              DTS:DTSID="{D2E6F272-614F-4F16-B772-4793FA935010}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Q025"
+              DTS:DTSID="{18CD1AE5-7F01-46CF-8956-E98E39C8FAE2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{73AABEE4-ED7D-4A4E-A0A1-49F0990A0910}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ubicase01\Desktop\BASES\CENSO2010\Atlas 2013_municipal, estadual e Brasil.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[nt-ent-tstptc-0\SQLEXPRESS.ST_UNIDATA_EXPANSAO]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{38AF026E-1969-46CF-B587-B63803727D1D}"
+      DTS:ObjectName="nt-ent-tstptc-0\SQLEXPRESS.ST_UNIDATA_EXPANSAO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=nt-ent-tstptc-0\SQLEXPRESS;Initial Catalog=ST_UNIDATA_EXPANSAO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{38AF026E-1969-46CF-B587-B63803727D1D}nt-ent-tstptc-0\SQLEXPRESS.ST_UNIDATA_EXPANSAO;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[nt-ent-tstptc-0\SQLEXPRESS.UNIDATA_EXPANSAO_DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0D593D24-2A8A-46ED-8A18-EC0364DC1243}"
+      DTS:ObjectName="nt-ent-tstptc-0\SQLEXPRESS.UNIDATA_EXPANSAO_DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=nt-ent-tstptc-0\SQLEXPRESS;Initial Catalog=UNIDATA_EXPANSAO_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{0D593D24-2A8A-46ED-8A18-EC0364DC1243}nt-ent-tstptc-0\SQLEXPRESS.UNIDATA_EXPANSAO_DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Carregando ST_MUNICIPIO"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{DA512384-FCE0-455B-ADAC-CFC59AF7D80E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carregando ST_MUNICIPIO"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Consumindo Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'MUN 91-00-10$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[ANO]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[ANO]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[ANO]"
+                      name="ANO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Codmun7]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Codmun7]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Codmun7]"
+                      name="Codmun7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Município]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Município]"
+                      length="50"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Município]"
+                      name="Município"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[pesotot]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[pesotot]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[pesotot]"
+                      name="pesotot"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM]"
+                      name="IDHM"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_E]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM_E]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_E]"
+                      name="IDHM_E"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_L]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM_L]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_L]"
+                      name="IDHM_L"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_R]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM_R]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_R]"
+                      name="IDHM_R"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[PESO1524]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO1524]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[PESO1524]"
+                      name="PESO1524"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[ANO]"
+                      dataType="r8"
+                      name="ANO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[UF]"
+                      dataType="r8"
+                      name="UF" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Codmun6]"
+                      dataType="r8"
+                      name="Codmun6" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Codmun7]"
+                      dataType="r8"
+                      name="Codmun7" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Município]"
+                      dataType="wstr"
+                      length="255"
+                      name="Município" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[ESPVIDA]"
+                      dataType="r8"
+                      name="ESPVIDA" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[FECTOT]"
+                      dataType="r8"
+                      name="FECTOT" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MORT1]"
+                      dataType="r8"
+                      name="MORT1" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MORT5]"
+                      dataType="r8"
+                      name="MORT5" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RAZDEP]"
+                      dataType="r8"
+                      name="RAZDEP" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[SOBRE40]"
+                      dataType="r8"
+                      name="SOBRE40" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[SOBRE60]"
+                      dataType="r8"
+                      name="SOBRE60" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ENV]"
+                      dataType="r8"
+                      name="T_ENV" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[E_ANOSESTUDO]"
+                      dataType="r8"
+                      name="E_ANOSESTUDO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ANALF11A14]"
+                      dataType="r8"
+                      name="T_ANALF11A14" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ANALF15A17]"
+                      dataType="r8"
+                      name="T_ANALF15A17" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ANALF15M]"
+                      dataType="r8"
+                      name="T_ANALF15M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ANALF18A24]"
+                      dataType="r8"
+                      name="T_ANALF18A24" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ANALF18M]"
+                      dataType="r8"
+                      name="T_ANALF18M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ANALF25A29]"
+                      dataType="r8"
+                      name="T_ANALF25A29" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ANALF25M]"
+                      dataType="r8"
+                      name="T_ANALF25M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_0_BASICO]"
+                      dataType="r8"
+                      name="T_ATRASO_0_BASICO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_0_FUND]"
+                      dataType="r8"
+                      name="T_ATRASO_0_FUND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_0_MED]"
+                      dataType="r8"
+                      name="T_ATRASO_0_MED" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_1_BASICO]"
+                      dataType="r8"
+                      name="T_ATRASO_1_BASICO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_1_FUND]"
+                      dataType="r8"
+                      name="T_ATRASO_1_FUND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_1_MED]"
+                      dataType="r8"
+                      name="T_ATRASO_1_MED" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_2_BASICO]"
+                      dataType="r8"
+                      name="T_ATRASO_2_BASICO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_2_FUND]"
+                      dataType="r8"
+                      name="T_ATRASO_2_FUND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATRASO_2_MED]"
+                      dataType="r8"
+                      name="T_ATRASO_2_MED" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FBBAS]"
+                      dataType="r8"
+                      name="T_FBBAS" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FBFUND]"
+                      dataType="r8"
+                      name="T_FBFUND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FBMED]"
+                      dataType="r8"
+                      name="T_FBMED" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FBPRE]"
+                      dataType="r8"
+                      name="T_FBPRE" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FBSUPER]"
+                      dataType="r8"
+                      name="T_FBSUPER" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FLBAS]"
+                      dataType="r8"
+                      name="T_FLBAS" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FLFUND]"
+                      dataType="r8"
+                      name="T_FLFUND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FLMED]"
+                      dataType="r8"
+                      name="T_FLMED" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FLPRE]"
+                      dataType="r8"
+                      name="T_FLPRE" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FLSUPER]"
+                      dataType="r8"
+                      name="T_FLSUPER" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ0A3]"
+                      dataType="r8"
+                      name="T_FREQ0A3" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ11A14]"
+                      dataType="r8"
+                      name="T_FREQ11A14" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ15A17]"
+                      dataType="r8"
+                      name="T_FREQ15A17" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ18A24]"
+                      dataType="r8"
+                      name="T_FREQ18A24" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ25A29]"
+                      dataType="r8"
+                      name="T_FREQ25A29" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ4A5]"
+                      dataType="r8"
+                      name="T_FREQ4A5" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ4A6]"
+                      dataType="r8"
+                      name="T_FREQ4A6" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ5A6]"
+                      dataType="r8"
+                      name="T_FREQ5A6" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ6]"
+                      dataType="r8"
+                      name="T_FREQ6" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ6A14]"
+                      dataType="r8"
+                      name="T_FREQ6A14" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQ6A17]"
+                      dataType="r8"
+                      name="T_FREQ6A17" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQFUND1517]"
+                      dataType="r8"
+                      name="T_FREQFUND1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQFUND1824]"
+                      dataType="r8"
+                      name="T_FREQFUND1824" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQFUND45]"
+                      dataType="r8"
+                      name="T_FREQFUND45" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQMED1824]"
+                      dataType="r8"
+                      name="T_FREQMED1824" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQMED614]"
+                      dataType="r8"
+                      name="T_FREQMED614" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FREQSUPER1517]"
+                      dataType="r8"
+                      name="T_FREQSUPER1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUND11A13]"
+                      dataType="r8"
+                      name="T_FUND11A13" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUND12A14]"
+                      dataType="r8"
+                      name="T_FUND12A14" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUND15A17]"
+                      dataType="r8"
+                      name="T_FUND15A17" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUND16A18]"
+                      dataType="r8"
+                      name="T_FUND16A18" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUND18A24]"
+                      dataType="r8"
+                      name="T_FUND18A24" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUND18M]"
+                      dataType="r8"
+                      name="T_FUND18M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUND25M]"
+                      dataType="r8"
+                      name="T_FUND25M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_MED18A20]"
+                      dataType="r8"
+                      name="T_MED18A20" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_MED18A24]"
+                      dataType="r8"
+                      name="T_MED18A24" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_MED18M]"
+                      dataType="r8"
+                      name="T_MED18M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_MED19A21]"
+                      dataType="r8"
+                      name="T_MED19A21" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_MED25M]"
+                      dataType="r8"
+                      name="T_MED25M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_SUPER25M]"
+                      dataType="r8"
+                      name="T_SUPER25M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[CORTE1]"
+                      dataType="r8"
+                      name="CORTE1" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[CORTE2]"
+                      dataType="r8"
+                      name="CORTE2" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[CORTE3]"
+                      dataType="r8"
+                      name="CORTE3" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[CORTE4]"
+                      dataType="r8"
+                      name="CORTE4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[CORTE9]"
+                      dataType="r8"
+                      name="CORTE9" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[GINI]"
+                      dataType="r8"
+                      name="GINI" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PIND]"
+                      dataType="r8"
+                      name="PIND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PINDCRI]"
+                      dataType="r8"
+                      name="PINDCRI" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PMPOB]"
+                      dataType="r8"
+                      name="PMPOB" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PMPOBCRI]"
+                      dataType="r8"
+                      name="PMPOBCRI" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PPOB]"
+                      dataType="r8"
+                      name="PPOB" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PPOBCRI]"
+                      dataType="r8"
+                      name="PPOBCRI" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PREN10RICOS]"
+                      dataType="r8"
+                      name="PREN10RICOS" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PREN20]"
+                      dataType="r8"
+                      name="PREN20" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PREN20RICOS]"
+                      dataType="r8"
+                      name="PREN20RICOS" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PREN40]"
+                      dataType="r8"
+                      name="PREN40" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PREN60]"
+                      dataType="r8"
+                      name="PREN60" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PREN80]"
+                      dataType="r8"
+                      name="PREN80" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PRENTRAB]"
+                      dataType="r8"
+                      name="PRENTRAB" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[R1040]"
+                      dataType="r8"
+                      name="R1040" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[R2040]"
+                      dataType="r8"
+                      name="R2040" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPC]"
+                      dataType="r8"
+                      name="RDPC" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPC1]"
+                      dataType="r8"
+                      name="RDPC1" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPC10]"
+                      dataType="r8"
+                      name="RDPC10" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPC2]"
+                      dataType="r8"
+                      name="RDPC2" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPC3]"
+                      dataType="r8"
+                      name="RDPC3" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPC4]"
+                      dataType="r8"
+                      name="RDPC4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPC5]"
+                      dataType="r8"
+                      name="RDPC5" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RDPCT]"
+                      dataType="r8"
+                      name="RDPCT" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RIND]"
+                      dataType="r8"
+                      name="RIND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RMPOB]"
+                      dataType="r8"
+                      name="RMPOB" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RPOB]"
+                      dataType="r8"
+                      name="RPOB" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[THEIL]"
+                      dataType="r8"
+                      name="THEIL" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[CPR]"
+                      dataType="r8"
+                      name="CPR" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[EMP]"
+                      dataType="r8"
+                      name="EMP" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_AGRO]"
+                      dataType="r8"
+                      name="P_AGRO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_COM]"
+                      dataType="r8"
+                      name="P_COM" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_CONSTR]"
+                      dataType="r8"
+                      name="P_CONSTR" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_EXTR]"
+                      dataType="r8"
+                      name="P_EXTR" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_FORMAL]"
+                      dataType="r8"
+                      name="P_FORMAL" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_FUND]"
+                      dataType="r8"
+                      name="P_FUND" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_MED]"
+                      dataType="r8"
+                      name="P_MED" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_SERV]"
+                      dataType="r8"
+                      name="P_SERV" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_SIUP]"
+                      dataType="r8"
+                      name="P_SIUP" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_SUPER]"
+                      dataType="r8"
+                      name="P_SUPER" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[P_TRANSF]"
+                      dataType="r8"
+                      name="P_TRANSF" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[REN0]"
+                      dataType="r8"
+                      name="REN0" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[REN1]"
+                      dataType="r8"
+                      name="REN1" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[REN2]"
+                      dataType="r8"
+                      name="REN2" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[REN3]"
+                      dataType="r8"
+                      name="REN3" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[REN5]"
+                      dataType="r8"
+                      name="REN5" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[RENOCUP]"
+                      dataType="r8"
+                      name="RENOCUP" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATIV]"
+                      dataType="r8"
+                      name="T_ATIV" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATIV1014]"
+                      dataType="r8"
+                      name="T_ATIV1014" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATIV1517]"
+                      dataType="r8"
+                      name="T_ATIV1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATIV1824]"
+                      dataType="r8"
+                      name="T_ATIV1824" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATIV18M]"
+                      dataType="r8"
+                      name="T_ATIV18M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_ATIV2529]"
+                      dataType="r8"
+                      name="T_ATIV2529" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_DES]"
+                      dataType="r8"
+                      name="T_DES" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_DES1014]"
+                      dataType="r8"
+                      name="T_DES1014" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_DES1517]"
+                      dataType="r8"
+                      name="T_DES1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_DES1824]"
+                      dataType="r8"
+                      name="T_DES1824" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_DES18M]"
+                      dataType="r8"
+                      name="T_DES18M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_DES2529]"
+                      dataType="r8"
+                      name="T_DES2529" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[THEILtrab]"
+                      dataType="r8"
+                      name="THEILtrab" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[TRABCC]"
+                      dataType="r8"
+                      name="TRABCC" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[TRABPUB]"
+                      dataType="r8"
+                      name="TRABPUB" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[TRABSC]"
+                      dataType="r8"
+                      name="TRABSC" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_AGUA]"
+                      dataType="r8"
+                      name="T_AGUA" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_BANAGUA]"
+                      dataType="r8"
+                      name="T_BANAGUA" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_DENS]"
+                      dataType="r8"
+                      name="T_DENS" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_LIXO]"
+                      dataType="r8"
+                      name="T_LIXO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_LUZ]"
+                      dataType="r8"
+                      name="T_LUZ" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[AGUA_ESGOTO]"
+                      dataType="r8"
+                      name="AGUA_ESGOTO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PAREDE]"
+                      dataType="r8"
+                      name="PAREDE" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_CRIFUNDIN_TODOS]"
+                      dataType="r8"
+                      name="T_CRIFUNDIN_TODOS" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FORA4A5]"
+                      dataType="r8"
+                      name="T_FORA4A5" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FORA6A14]"
+                      dataType="r8"
+                      name="T_FORA6A14" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUNDIN_TODOS]"
+                      dataType="r8"
+                      name="T_FUNDIN_TODOS" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUNDIN_TODOS_MMEIO]"
+                      dataType="r8"
+                      name="T_FUNDIN_TODOS_MMEIO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_FUNDIN18MINF]"
+                      dataType="r8"
+                      name="T_FUNDIN18MINF" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_M10A14CF]"
+                      dataType="r8"
+                      name="T_M10A14CF" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_M15A17CF]"
+                      dataType="r8"
+                      name="T_M15A17CF" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_MULCHEFEFIF014]"
+                      dataType="r8"
+                      name="T_MULCHEFEFIF014" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_NESTUDA_NTRAB_MMEIO]"
+                      dataType="r8"
+                      name="T_NESTUDA_NTRAB_MMEIO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_OCUPDESLOC_1]"
+                      dataType="r8"
+                      name="T_OCUPDESLOC_1" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_RMAXIDOSO]"
+                      dataType="r8"
+                      name="T_RMAXIDOSO" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[T_SLUZ]"
+                      dataType="r8"
+                      name="T_SLUZ" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM0A4]"
+                      dataType="r8"
+                      name="HOMEM0A4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM10A14]"
+                      dataType="r8"
+                      name="HOMEM10A14" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM15A19]"
+                      dataType="r8"
+                      name="HOMEM15A19" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM20A24]"
+                      dataType="r8"
+                      name="HOMEM20A24" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM25A29]"
+                      dataType="r8"
+                      name="HOMEM25A29" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM30A34]"
+                      dataType="r8"
+                      name="HOMEM30A34" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM35A39]"
+                      dataType="r8"
+                      name="HOMEM35A39" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM40A44]"
+                      dataType="r8"
+                      name="HOMEM40A44" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM45A49]"
+                      dataType="r8"
+                      name="HOMEM45A49" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM50A54]"
+                      dataType="r8"
+                      name="HOMEM50A54" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM55A59]"
+                      dataType="r8"
+                      name="HOMEM55A59" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM5A9]"
+                      dataType="r8"
+                      name="HOMEM5A9" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM60A64]"
+                      dataType="r8"
+                      name="HOMEM60A64" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM65A69]"
+                      dataType="r8"
+                      name="HOMEM65A69" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM70A74]"
+                      dataType="r8"
+                      name="HOMEM70A74" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEM75A79]"
+                      dataType="r8"
+                      name="HOMEM75A79" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMEMTOT]"
+                      dataType="r8"
+                      name="HOMEMTOT" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[HOMENS80]"
+                      dataType="r8"
+                      name="HOMENS80" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH0A4]"
+                      dataType="r8"
+                      name="MULH0A4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH10A14]"
+                      dataType="r8"
+                      name="MULH10A14" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH15A19]"
+                      dataType="r8"
+                      name="MULH15A19" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH20A24]"
+                      dataType="r8"
+                      name="MULH20A24" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH25A29]"
+                      dataType="r8"
+                      name="MULH25A29" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH30A34]"
+                      dataType="r8"
+                      name="MULH30A34" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH35A39]"
+                      dataType="r8"
+                      name="MULH35A39" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH40A44]"
+                      dataType="r8"
+                      name="MULH40A44" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH45A49]"
+                      dataType="r8"
+                      name="MULH45A49" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH50A54]"
+                      dataType="r8"
+                      name="MULH50A54" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH55A59]"
+                      dataType="r8"
+                      name="MULH55A59" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH5A9]"
+                      dataType="r8"
+                      name="MULH5A9" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH60A64]"
+                      dataType="r8"
+                      name="MULH60A64" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH65A69]"
+                      dataType="r8"
+                      name="MULH65A69" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH70A74]"
+                      dataType="r8"
+                      name="MULH70A74" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULH75A79]"
+                      dataType="r8"
+                      name="MULH75A79" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULHER80]"
+                      dataType="r8"
+                      name="MULHER80" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[MULHERTOT]"
+                      dataType="r8"
+                      name="MULHERTOT" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PEA]"
+                      dataType="r8"
+                      name="PEA" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PEA1014]"
+                      dataType="r8"
+                      name="PEA1014" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PEA1517]"
+                      dataType="r8"
+                      name="PEA1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PEA18M]"
+                      dataType="r8"
+                      name="PEA18M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[peso1]"
+                      dataType="r8"
+                      name="peso1" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO1114]"
+                      dataType="r8"
+                      name="PESO1114" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO1113]"
+                      dataType="r8"
+                      name="PESO1113" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO1214]"
+                      dataType="r8"
+                      name="PESO1214" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[peso13]"
+                      dataType="r8"
+                      name="peso13" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO15]"
+                      dataType="r8"
+                      name="PESO15" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[peso1517]"
+                      dataType="r8"
+                      name="peso1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO1524]"
+                      dataType="r8"
+                      name="PESO1524" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO1618]"
+                      dataType="r8"
+                      name="PESO1618" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO18]"
+                      dataType="r8"
+                      name="PESO18" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Peso1820]"
+                      dataType="r8"
+                      name="Peso1820" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO1824]"
+                      dataType="r8"
+                      name="PESO1824" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Peso1921]"
+                      dataType="r8"
+                      name="Peso1921" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO25]"
+                      dataType="r8"
+                      name="PESO25" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[peso4]"
+                      dataType="r8"
+                      name="peso4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[peso5]"
+                      dataType="r8"
+                      name="peso5" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[peso6]"
+                      dataType="r8"
+                      name="peso6" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO610]"
+                      dataType="r8"
+                      name="PESO610" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[Peso617]"
+                      dataType="r8"
+                      name="Peso617" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESO65]"
+                      dataType="r8"
+                      name="PESO65" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESOM1014]"
+                      dataType="r8"
+                      name="PESOM1014" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESOM1517]"
+                      dataType="r8"
+                      name="PESOM1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESOM15M]"
+                      dataType="r8"
+                      name="PESOM15M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PESOM25M]"
+                      dataType="r8"
+                      name="PESOM25M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[pesoRUR]"
+                      dataType="r8"
+                      name="pesoRUR" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[pesotot]"
+                      dataType="r8"
+                      name="pesotot" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[pesourb]"
+                      dataType="r8"
+                      name="pesourb" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PIA]"
+                      dataType="r8"
+                      name="PIA" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PIA1014]"
+                      dataType="r8"
+                      name="PIA1014" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PIA1517]"
+                      dataType="r8"
+                      name="PIA1517" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[PIA18M]"
+                      dataType="r8"
+                      name="PIA18M" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[POP]"
+                      dataType="r8"
+                      name="POP" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[POPT]"
+                      dataType="r8"
+                      name="POPT" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[I_ESCOLARIDADE]"
+                      dataType="r8"
+                      name="I_ESCOLARIDADE" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[I_FREQ_PROP]"
+                      dataType="r8"
+                      name="I_FREQ_PROP" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM]"
+                      dataType="r8"
+                      name="IDHM" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM_E]"
+                      dataType="r8"
+                      name="IDHM_E" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM_L]"
+                      dataType="r8"
+                      name="IDHM_L" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].ExternalColumns[IDHM_R]"
+                      dataType="r8"
+                      name="IDHM_R" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[ANO]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[ANO]"
+                      name="ANO" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[Codmun7]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[Codmun7]"
+                      name="Codmun7" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[Município]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[Município]"
+                      name="Município" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[pesotot]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[pesotot]"
+                      name="pesotot" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM]"
+                      name="IDHM" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM_E]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM_E]"
+                      name="IDHM_E" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM_L]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM_L]"
+                      name="IDHM_L" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM_R]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[IDHM_R]"
+                      name="IDHM_R" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[PESO1524]"
+                      dataType="r8"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Error Output].Columns[PESO1524]"
+                      name="PESO1524" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Executando função UPPER no campo de Municipios"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Inputs[Derived Column Input].Columns[MUNICIPIO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Município"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Município]"
+                      name="MUNICIPIO"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER](#{Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Município]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(MUNICIPIO)</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Gravando Tabela STAGE"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[TS_MUNICIPIOS]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[nt-ent-tstptc-0\SQLEXPRESS.ST_UNIDATA_EXPANSAO]"
+                  connectionManagerRefId="Package.ConnectionManagers[nt-ent-tstptc-0\SQLEXPRESS.ST_UNIDATA_EXPANSAO]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[ANO]"
+                      cachedDataType="r8"
+                      cachedName="ANO"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[ANO]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[ANO]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[Codmun7]"
+                      cachedDataType="r8"
+                      cachedName="Codmun7"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[CODMUN7]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Codmun7]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[pesotot]"
+                      cachedDataType="r8"
+                      cachedName="pesotot"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[PESOTOT]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[pesotot]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[IDHM]"
+                      cachedDataType="r8"
+                      cachedName="IDHM"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[PESO1524]"
+                      cachedDataType="r8"
+                      cachedName="PESO1524"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[PESO1524]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[PESO1524]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[Município]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Município"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[NOMEMUN]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[Município]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[IDHM_E]"
+                      cachedDataType="r8"
+                      cachedName="IDHM_E"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM_EDU]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_E]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[IDHM_L]"
+                      cachedDataType="r8"
+                      cachedName="IDHM_L"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM_LONG]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_L]" />
+                    <inputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].Columns[IDHM_R]"
+                      cachedDataType="r8"
+                      cachedName="IDHM_R"
+                      externalMetadataColumnId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM_RENDA]"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output].Columns[IDHM_R]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[CODMUN7]"
+                      dataType="i4"
+                      name="CODMUN7" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[NOMEMUN]"
+                      dataType="wstr"
+                      length="260"
+                      name="NOMEMUN" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM]"
+                      dataType="numeric"
+                      name="IDHM"
+                      precision="10"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM_EDU]"
+                      dataType="numeric"
+                      name="IDHM_EDU"
+                      precision="10"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM_LONG]"
+                      dataType="numeric"
+                      name="IDHM_LONG"
+                      precision="10"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[IDHM_RENDA]"
+                      dataType="numeric"
+                      name="IDHM_RENDA"
+                      precision="10"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[PESO1524]"
+                      dataType="i4"
+                      name="PESO1524" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[PESOTOT]"
+                      dataType="i4"
+                      name="PESOTOT" />
+                    <externalMetadataColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input].ExternalColumns[ANO]"
+                      dataType="i4"
+                      name="ANO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Carregando ST_MUNICIPIO.Paths[Derived Column Output]"
+              endId="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Carregando ST_MUNICIPIO.Paths[Excel Source Output]"
+              endId="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios.Inputs[Derived Column Input]"
+              name="Excel Source Output"
+              startId="Package\Carregando ST_MUNICIPIO\Consumindo Excel.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Limpando Tabela ST_MUNICIPIO"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B71AFF18-B57F-4D41-83FE-CFC31DED5AC3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpando Tabela ST_MUNICIPIO"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{38AF026E-1969-46CF-B587-B63803727D1D}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [ST_UNIDATA_EXPANSAO].[dbo].[TS_MUNICIPIOS]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{30B6745A-78D5-4013-9FCE-E7A3B9AB0A9F}"
+      DTS:From="Package\Limpando Tabela ST_MUNICIPIO"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Carregando ST_MUNICIPIO" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Carregando ST_MUNICIPIO"
+          TopLeft="364.5,239.5" />
+        <NodeLayout
+          Size="235,42"
+          Id="Package\Limpando Tabela ST_MUNICIPIO"
+          TopLeft="251.5,123.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="369,165.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71,74"
+              Start="0,0"
+              End="71,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
+                  <mssgle:LineSegment
+                    End="67,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="67,37"
+                    Point2="71,37"
+                    Point3="71,41" />
+                  <mssgle:LineSegment
+                    End="71,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Carregando ST_MUNICIPIO">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="194,42"
+          Id="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE"
+          TopLeft="363,321" />
+        <NodeLayout
+          Size="320,42"
+          Id="Package\Carregando ST_MUNICIPIO\Executando função UPPER no campo de Municipios"
+          TopLeft="152,130" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Carregando ST_MUNICIPIO\Consumindo Excel"
+          TopLeft="164,59" />
+        <EdgeLayout
+          Id="Package\Carregando ST_MUNICIPIO.Paths[Excel Source Output]"
+          TopLeft="233.5,101">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="78.5,29"
+              Start="0,0"
+              End="78.5,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.5"
+                    Point2="0,14.5"
+                    Point3="4,14.5" />
+                  <mssgle:LineSegment
+                    End="74.5,14.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="74.5,14.5"
+                    Point2="78.5,14.5"
+                    Point3="78.5,18.5" />
+                  <mssgle:LineSegment
+                    End="78.5,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carregando ST_MUNICIPIO.Paths[Derived Column Output]"
+          TopLeft="312,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="148,149"
+              Start="0,0"
+              End="148,141.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,70.5"
+                    Point2="0,74.5"
+                    Point3="4,74.5" />
+                  <mssgle:LineSegment
+                    End="144,74.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="144,74.5"
+                    Point2="148,74.5"
+                    Point3="148,78.5" />
+                  <mssgle:LineSegment
+                    End="148,141.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carregando ST_MUNICIPIO\Gravando Tabela STAGE">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carregando ST_MUNICIPIO\Consumindo Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

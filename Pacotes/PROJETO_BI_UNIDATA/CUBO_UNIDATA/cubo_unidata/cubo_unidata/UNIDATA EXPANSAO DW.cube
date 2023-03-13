@@ -1,0 +1,483 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="36a17f6b-0524-4852-8951-d3bc18767bb8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>UNIDATA EXPANSAO DW</ID>
+  <Name>UNIDATA EXPANSAO DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4546" scrolltop="-1508" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="14843" y="8573" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_TP_ESCOLA" left="390" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3784" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80e000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_TP_ESCOLA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_MUNICIPIO" left="6454" top="5760" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3625" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000290e000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_MUNICIPIO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FCT_CANDIDATOS" left="509" top="4279" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3545" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d90d0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FCT_CANDIDATOS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TA_DADOS_MUNICIPIO" left="20" top="11521" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="4524" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ac1100009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_TA_DADOS_MUNICIPIO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1883" top="1380" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FCT_CANDI__ID_TP__5EBF139D]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2282" y="1879" />
+              <point x="2282" y="3079" />
+              <point x="2281" y="3079" />
+              <point x="2281" y="4279" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3754" top="6300" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FCT_CANDIDATOS-DIM_MUNICIPIO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="16" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6454" y="6699" />
+              <point x="5254" y="6699" />
+              <point x="5254" y="6700" />
+              <point x="4054" y="6700" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1883" top="8821" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FCT_CANDIDATOS-TA_DADOS_MUNICIPIO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2282" y="11521" />
+              <point x="2282" y="10321" />
+              <point x="2281" y="10321" />
+              <point x="2281" y="9121" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4546</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1508</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d3cb2100-4def-47c3-b657-31ef7ae7d30a">
+      <ID>DIM TP ESCOLA</ID>
+      <Name>DIM TP ESCOLA</Name>
+      <DimensionID>DIM TP ESCOLA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7d8a3509-0688-4d7a-8f4e-0564a082b2e1">
+          <AttributeID>ID TP ESCOLA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="838f31b2-6d87-408d-b148-661ea9e07b15">
+          <AttributeID>DESC TP ESCOLA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8d4b8105-c6da-4c7b-9f23-cc67cfd84529">
+      <ID>DIM MUNICIPIO</ID>
+      <Name>DIM MUNICIPIO</Name>
+      <DimensionID>DIM MUNICIPIO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7f599cfc-3caa-4ff9-9b64-74b77ea5a20f">
+          <AttributeID>ID MUNICIPIO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a40f19b-6813-4ae5-80c4-e0fb6f5b98a8">
+          <AttributeID>DESC MUNICIPIO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="745e38e4-5c13-49d2-aef5-9c670c529ac5">
+      <ID>TA DADOS MUNICIPIO</ID>
+      <Name>TA DADOS MUNICIPIO</Name>
+      <DimensionID>TA DADOS MUNICIPIO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2fb0e641-3781-4d15-af8d-5a1615f2f06e">
+          <AttributeID>ID MUNICIPIO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3b135f7e-e07c-4f59-b75f-6e3ce81e3ca8">
+      <ID>FCT CANDIDATOS</ID>
+      <Name>FCT CANDIDATOS</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="5a09e9ac-4bd9-4606-a927-e67332338d30">
+          <ID>ANO</ID>
+          <Name>ANO</Name>
+          <Source dwd:design-time-name="da5d5637-c73f-4fcb-bf26-36f45461118c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="54e84944-72b8-4a07-ba5e-143127f462bd">
+              <TableID>dbo_FCT_CANDIDATOS</TableID>
+              <ColumnID>ANO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e753f1be-a108-4b11-b117-91b6f653f551">
+          <ID>NOTA CN</ID>
+          <Name>NOTA CN</Name>
+          <Source dwd:design-time-name="c44ccce5-c149-4d00-a186-7be8aa4eab67">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="78322409-c879-46c1-955b-00ba92fa8f4f">
+              <TableID>dbo_FCT_CANDIDATOS</TableID>
+              <ColumnID>NOTA_CN</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="553f169c-1093-4887-89b1-078c5bdef23e">
+          <ID>NOTA CH</ID>
+          <Name>NOTA CH</Name>
+          <Source dwd:design-time-name="027bb3c0-635f-4176-82da-5f244492813a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bf220e17-72e9-4b58-b9a3-71052088e147">
+              <TableID>dbo_FCT_CANDIDATOS</TableID>
+              <ColumnID>NOTA_CH</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="322d6726-226c-4d47-b953-3c753e56b2f9">
+          <ID>NOTA LC</ID>
+          <Name>NOTA LC</Name>
+          <Source dwd:design-time-name="942da0be-51ee-4747-a040-59c750957b8d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="29f80d06-b8b2-44c2-8c6a-2cf64502698f">
+              <TableID>dbo_FCT_CANDIDATOS</TableID>
+              <ColumnID>NOTA_LC</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1028d7eb-fadc-4297-a533-1abe9503ddb9">
+          <ID>NOTA MT</ID>
+          <Name>NOTA MT</Name>
+          <Source dwd:design-time-name="ae33a4fd-d534-4ba4-8a2b-06a45d090541">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7ee3f9ed-3302-47b5-9999-a649cfc09d0f">
+              <TableID>dbo_FCT_CANDIDATOS</TableID>
+              <ColumnID>NOTA_MT</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="193a8f39-d4b0-410d-8917-ca34a81dc926">
+          <ID>NOTA REDACAO</ID>
+          <Name>NOTA REDACAO</Name>
+          <Source dwd:design-time-name="137cf54a-ba47-4f56-b56f-f05b8ed8ba9c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0893c2dd-f25c-44ea-8121-014f25e675eb">
+              <TableID>dbo_FCT_CANDIDATOS</TableID>
+              <ColumnID>NOTA_REDACAO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="be917c45-e252-4855-8b0c-67a096aaeb01">
+          <ID>FCT CANDIDATOS Count</ID>
+          <Name>FCT CANDIDATOS Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="80cd3aac-6e9f-4851-ba60-14244f060575">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7661beb8-ec78-426d-918e-62b43e04ef4f">
+              <TableID>dbo_FCT_CANDIDATOS</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2a2a0dd2-4d88-42a3-b68e-ddbf7f3808aa">
+          <CubeDimensionID>DIM TP ESCOLA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d682b1a4-e915-4683-8246-268956aadbf2">
+              <AttributeID>ID TP ESCOLA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="608a02c8-1a76-4a31-9d16-1c6577f58756">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b15f0963-fb12-473a-91c8-991759d89094">
+                    <TableID>dbo_FCT_CANDIDATOS</TableID>
+                    <ColumnID>ID_TP_ESCOLA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="417128f5-cb70-41f0-94f1-d8b980536693">
+          <CubeDimensionID>DIM MUNICIPIO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="987be5df-970c-4472-81f7-ec3fb563c009">
+              <AttributeID>ID MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e53a787-fd03-4824-a0dc-330874e40da9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7655a69a-7c1f-4803-9992-f4f674b81f84">
+                    <TableID>dbo_FCT_CANDIDATOS</TableID>
+                    <ColumnID>ID_MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a3d7011d-581c-4c4c-a5d7-0fd08f56ea84">
+          <CubeDimensionID>TA DADOS MUNICIPIO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="98210182-b986-45c8-91c1-cc3a3d4a87a2">
+              <AttributeID>ID MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9a1d5a3d-be5a-498a-994a-715d5c20e88d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c1bffdff-36ce-41ab-a101-02db10a64a3d">
+                    <TableID>dbo_FCT_CANDIDATOS</TableID>
+                    <ColumnID>ID_MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="5ba21c64-d3bf-439e-b5fc-3c1d9a858303">
+      <ID>TA DADOS MUNICIPIO</ID>
+      <Name>TA DADOS MUNICIPIO</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7adf48d6-de1a-4cfa-8119-75f3fc797cd2">
+          <ID>IDH MUNICIPIO</ID>
+          <Name>IDH MUNICIPIO</Name>
+          <Source dwd:design-time-name="799853d4-287b-44a9-ae16-83c9b7b3ede2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e49e9cb4-aa93-48b8-b3b2-518b07917bdc">
+              <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+              <ColumnID>IDH_MUNICIPIO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1cc7db0a-d183-47c6-a539-1fc4e230bc68">
+          <ID>IDH EDU MUNICIPIO</ID>
+          <Name>IDH EDU MUNICIPIO</Name>
+          <Source dwd:design-time-name="e316e249-e934-4448-a150-958915e4d2f3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f1f19863-6d6a-43f9-869b-a8a815f55be5">
+              <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+              <ColumnID>IDH_EDU_MUNICIPIO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b2c64f36-8ca3-4f01-92d9-937d6835b2fc">
+          <ID>IDH LONG MUNICIPIO</ID>
+          <Name>IDH LONG MUNICIPIO</Name>
+          <Source dwd:design-time-name="d655a96f-7ca6-4fb3-9328-98171e2263ea">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0e7eb5d8-a70b-43e8-902c-7e159d293d3c">
+              <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+              <ColumnID>IDH_LONG_MUNICIPIO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8c9961d8-94d0-4d46-a8bb-b739f609e695">
+          <ID>IDH RENDA MUNICIPIO</ID>
+          <Name>IDH RENDA MUNICIPIO</Name>
+          <Source dwd:design-time-name="480da35f-b94f-4094-a7a9-e06df5dd836c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7f080d56-2c56-4875-8eb5-72a9d25da843">
+              <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+              <ColumnID>IDH_RENDA_MUNICIPIO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="91e12fcf-56b3-4e4f-9b8d-e459e8fd4aa5">
+          <ID>POP 1524</ID>
+          <Name>POP 1524</Name>
+          <Source dwd:design-time-name="dc495dc4-c955-4a24-8728-6bfb18c0ae0c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="77e88bca-9f53-4236-b5b5-780fac148ed4">
+              <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+              <ColumnID>POP_1524</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a71c8880-1d0b-4684-b47e-dea49bfd1c09">
+          <ID>POP TOTAL</ID>
+          <Name>POP TOTAL</Name>
+          <Source dwd:design-time-name="47a67321-924a-4d03-82d5-91c008d65e53">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4142f49c-4752-4e6f-a679-c4cd6b8f2f79">
+              <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+              <ColumnID>POP_TOTAL</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7448d87f-9e1f-4267-8f79-2cdc26524b24">
+          <ID>TA DADOS MUNICIPIO Count</ID>
+          <Name>TA DADOS MUNICIPIO Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="8367635a-5569-46cd-8299-30a2f5d91759">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a5913dd2-44d7-4dcd-b667-0f715ee4bf6d">
+              <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="9b47dd7c-2fb2-4591-91ae-0fe33a6ebabd">
+          <CubeDimensionID>TA DADOS MUNICIPIO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="806986c4-6075-487d-8edf-2f73115484c2">
+              <AttributeID>ID MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e2ed9d31-5aa4-4a55-9bfd-974b4f0d4dfd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d7105503-6527-4a38-a828-bf31aab9ed5d">
+                    <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+                    <ColumnID>ID_MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="abce8e55-7014-4bcc-92cc-4db20463b4b9">
+          <CubeDimensionID>DIM MUNICIPIO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a4ff1f15-b9d7-4372-9f8b-5cba7afeccf2">
+              <AttributeID>ID MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f79b6ee8-8648-4bc6-9f05-adc86c5d7829">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f2bd4fb-63ca-4e25-9ad8-aa7cdf8f4a27">
+                    <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+                    <ColumnID>ID_MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="24ed738b-7e21-41d7-a242-c7ae58adf1a5">
+    <DataSourceViewID>UNIDATA EXPANSAO DW</DataSourceViewID>
+  </Source>
+</Cube>

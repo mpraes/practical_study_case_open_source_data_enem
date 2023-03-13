@@ -1,0 +1,45 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="524ffe75-fead-48cc-826b-049080a1d25f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>UNIDATA EXPANSAO DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FCT CANDIDATOS</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="77489809-f8d8-405f-a40d-8e0ffd30750f">
+          <ID>FCT CANDIDATOS</ID>
+          <Name>FCT CANDIDATOS</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="77cf656a-d3c5-4448-adb5-358dc026e239">
+            <DataSourceViewID>UNIDATA EXPANSAO DW</DataSourceViewID>
+            <TableID>dbo_FCT_CANDIDATOS</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>TA DADOS MUNICIPIO</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3a20e39f-c883-4d00-8587-3b808c63f1b3">
+          <ID>TA DADOS MUNICIPIO</ID>
+          <Name>TA DADOS MUNICIPIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ef6404e0-7e60-4419-ade8-b68be20075ac">
+            <DataSourceViewID>UNIDATA EXPANSAO DW</DataSourceViewID>
+            <TableID>dbo_TA_DADOS_MUNICIPIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
