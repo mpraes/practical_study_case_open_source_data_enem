@@ -1,16 +1,16 @@
-# Teste prático processo seletivo 
-> Desafio prático relacionado ao processo seletivo para DESENVOLVEDOR BI
+# Practical Study Case on ENEM Data Open Source (Portuguese)
+> Hands on practice created using SSIS, SSAS and SSMS
  
-> Candidato:Renan de Moraes.
+> Developer:Renan de Moraes.
 
 > E-mail: renan.de.moraes777@gmail.com 
 
 > Data Execução: 13/03/2023
-## Pré-requisitos
-Ferramentas e versões utilizadas
+## Requirements
+Tools available
 ## Resultados obtidos
-Modelagem Dimensional desenhada e executada no SSMS. 
-Todas extrações para as tabelas de Staging e DW foram criadas e executadas. 
-Modelo cubo no Analysis Services quase finalizado (tive um erro de servidor não ativo para processar o cubo). 
-Arquivo Pbix não criado.
+Dimensional Modeling designed and executed in SSMS.
+All extracts for Staging and DW tables have been created and run.
+Cube model in Analysis Services almost finished (I had a server not active error to process the cube).
+Pbix file not created.
 
